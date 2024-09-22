@@ -37,14 +37,14 @@
     
 </head>
 <body class="font-lexend">
-    <header>
-        <nav class="bg-navColor ">
-            <div class="navbar max-w-[1440px] mx-auto h-24">
+    <header class="bg-navColor ">
+        <nav class="pb-10">
+            <div class="navbar lg:max-w-[1440px] w-10/12 mx-auto h-24">
                 <div class="navbar-start">
                   <a href="#" class="font-bold text-black bg-btnColor px-8 py-3 rounded-lg">Blog</a>
                 </div>
     
-                <div class="navbar-center flex">
+                <div class="navbar-center  hidden md:flex">
                     <img class="w-12 h-12 mr-3" src="assets/main.png" alt="logo">
                     <h3 class="text-black font-bold">Donate Bangladesh</h3>
                 </div>
@@ -57,10 +57,15 @@
         </nav>
     </header>
 
-    <main class="bg-white max-w-[1440px]  justify-center mx-auto my-20 flex flex-col">
+    <main class="bg-white lg:max-w-[1440px] w-10/12 justify-center mx-auto  my-20 flex flex-col">
+
+        <div class="flex justify-center gap-4">
+            <a href="#" class="font-bold text-black bg-btnColor px-8 py-3 rounded-lg">Donation</a>
+            <a href="#" class="font-bold text-customGray border px-8 py-3 rounded-lg">History</a>
+        </div>
 
         <!-- Donate card of Noakhali-->
-        <div class="card md:card-side bg-base-100 shadow-xl flex p-8 w-full mb-8 border-bCustomGray border">
+        <div class="card md:card-side bg-base-100 shadow-xl flex p-8 w-full my-8 border-bCustomGray border">
             <figure class="w-full md:w-1/2">
                 <img src="assets/noakhali.png" alt="Album" class="w-full h-full object-cover" />
             </figure>
@@ -70,7 +75,7 @@
                 <div class="inline-block bg-shadowColor px-4 py-2.5 rounded-lg mb-4">
                     <div class="flex items-center">
                         <img class="w-5 h-5 mr-2" src="assets/coin.png" alt="coin">
-                        <h5 class="text-sm font-medium"><span>0</span> BDT</h5>
+                        <h5 class="text-sm font-medium"><span>2330</span> BDT</h5>
                     </div>
                 </div>
 
