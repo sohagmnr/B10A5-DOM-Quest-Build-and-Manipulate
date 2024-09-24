@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!-- google font (lexend) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI and tailwindcss cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                lexend: ['Lexend', 'sans-serif'],
+              },
+              colors: {
+                btnColor: 'rgb(180, 244, 97)',
+                navColor: 'rgb(249, 247, 243)',
+                shadowColor: 'rgba(17, 17, 17, 0.05)',
+                customGray: 'rgba(17, 17, 17, 0.7)',
+                bCustomGray: 'rgba(17, 17, 17, 0.1)',
+              },
+            },
+          },
+        }
+      </script>
+
+    
+</head>
+<body class="font-lexend bg-white">
+    <header class="border-b-2 border-bCustomGray border-solid pb-10 backdrop-blur-lg  sticky top-0 z-50">
+        <nav class="bg-navColor mb-10">
+            <div class="navbar lg:max-w-[1440px] w-10/12 mx-auto h-24">
+                <div class="navbar-start">
+                  <a href="index.html" class="font-bold text-black bg-btnColor px-8 py-3 rounded-lg">Home</a>
+                </div>
+    
+                <div class="navbar-center  hidden md:flex">
+                    <img class="w-12 h-12 mr-3" src="assets/main.png" alt="logo">
+                    <h3 class="text-black font-bold">Donate Bangladesh</h3>
+                </div>
+    
+                <div class="flex navbar-end">
+                    <img class="mr-2" src="assets/coin.png" alt="coin">
+                    <h3><span id="myBalance">500000</span> BDT</h3>
+                </div>
+            </div>
+        </nav>
+
+      
+        
+    </header>
+
+    <main class=" lg:max-w-[1440px] w-10/12 justify-center mx-auto  my-20 flex flex-col">
+
+        <div class="collapse mb-5 collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What motivated you to donate to this charity?
+            </div>
+            <div class="collapse-content">
+              <input type="text" class="input input-bordered w-full" placeholder="Type your answer here" />
+            </div>
+          </div>
+          
+          <div class="collapse mb-5 collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How did you hear about this charity?
+            </div>
+            <div class="collapse-content">
+              <input type="text" class="input input-bordered w-full" placeholder="Type your answer here" />
+            </div>
+          </div>
+          
+          <div class="collapse collapse-arrow mb-5 bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How often do you donate to charity?
+            </div>
+            <div class="collapse-content">
+              <input type="text" class="input input-bordered w-full" placeholder="Type your answer here" />
+            </div>
+          </div>
+          
+          <div class="collapse mb-5 collapse-arrow bg-base-200 ">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              Do you prefer donating money or volunteering your time?
+            </div>
+            <div class="collapse-content">
+              <input type="text" class="input input-bordered w-full" placeholder="Type your answer here" />
+            </div>
+          </div>
+          
+
+    </main>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
