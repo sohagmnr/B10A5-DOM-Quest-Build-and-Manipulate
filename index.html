@@ -59,8 +59,8 @@
       
 
         <div class="flex justify-center gap-4">
-            <button id="donationButton" class="font-bold text-black bg-btnColor px-8 py-3 rounded-lg" onclick="showDonations()">Donation</button>
-            <button id="historyButton" class="font-bold text-customGray border px-8 py-3 rounded-lg" onclick="showHistory()">History</button>
+            <button id="dntBtn" class="font-bold text-black bg-btnColor px-8 py-3 rounded-lg" onclick="viewDono()">Donation</button>
+            <button id="historyBtn" class="font-bold text-customGray border px-8 py-3 rounded-lg" onclick="viewHistory()">History</button>
         </div>
         
     </header>
@@ -68,7 +68,7 @@
     <main class=" lg:max-w-[1440px] w-10/12 justify-center mx-auto  my-20 flex flex-col">
         
         <!-- donation section -->
-        <div id="donationSection">
+        <div id="dntSec">
 
         
 
@@ -88,13 +88,13 @@
                     <div class="inline-block bg-shadowColor px-4 py-2.5 rounded-lg mb-4">
                         <div class="flex items-center">
                             <img class="w-5 h-5 mr-2" src="assets/coin.png" alt="coin">
-                            <h5 class="text-sm font-medium"><span id="charity1Balance">2330</span> BDT</h5>
+                            <h5 class="text-sm font-medium text-black"><span id="charity1Balance">2330</span> BDT</h5>
                         </div>
                     </div>
 
                     
                     <!-- card title -->
-                    <h2 class="card-title mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="card-title text-black mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
                     <!-- card description -->
                     <p class="mb-6 text-customGray leading-7">The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies and support to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     
@@ -133,12 +133,12 @@
                     <div class="inline-block bg-shadowColor px-4 py-2.5 rounded-lg mb-4">
                         <div class="flex items-center">
                             <img class="w-5 h-5 mr-2" src="assets/coin.png" alt="coin">
-                            <h5 class="text-sm font-medium"><span id="charity2Balance">0</span> BDT</h5>
+                            <h5 class="text-sm text-black font-medium"><span id="charity2Balance">0</span> BDT</h5>
                         </div>
                     </div>
 
                     <!-- card title -->
-                    <h2 class="card-title mb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <h2 class="card-title text-black mb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
                     
                     <!-- card description -->
                     <p class="mb-6 text-customGray leading-7">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
@@ -174,12 +174,12 @@
                     <div class="inline-block bg-shadowColor px-4 py-2.5 rounded-lg mb-4">
                         <div class="flex items-center">
                             <img class="w-5 h-5 mr-2" src="assets/coin.png" alt="coin">
-                            <h5 class="text-sm font-medium"><span id="charity3Balance">0</span> BDT</h5>
+                            <h5 class="text-sm text-black font-medium"><span id="charity3Balance">0</span> BDT</h5>
                         </div>
                     </div>
 
                     <!-- card title -->
-                    <h2 class="card-title mb-4">Aid for Injured in the Quota Movement</h2>
+                    <h2 class="card-title text-black mb-4">Aid for Injured in the Quota Movement</h2>
                     
                     <!-- card description -->
                     <p class="mb-6 text-customGray leading-7">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
@@ -212,12 +212,12 @@
 
     <!-- modal -->
     
-    <div id="thankYouModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div id="congoModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
         <div class="bg-white px-8 py-6 flex flex-col gap-2 items-center rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold">Congrates!</h2>
+            <h2 class="text-2xl text-black font-bold">Congrates!</h2>
             <img src="assets/coin.png" >
-            <p>You Have Donated for Humankind</p>
-            <h3 class="text-xl font-bold">Successfully</h3>
+            <p >You Have Donated for Humankind</p>
+            <h3 class="text-xl text-black font-bold">Successfully</h3>
             <button id="closeModal" class="mt-4 bg-bCustomGray px-4 py-2 rounded">close confirmation</button>
         </div>
     </div>
